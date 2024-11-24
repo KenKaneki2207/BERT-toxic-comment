@@ -1,0 +1,35 @@
+body {
+    background-image: url('https://t3.ftcdn.net/jpg/03/83/21/14/360_F_383211493_IeDoiYIgUhpSU1I0JQcxngxKWTlF1RnA.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hidden {
+    display: none;
+}
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.tick {
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    animation: tick-animation 1s forwards;
+}
+@keyframes tick-animation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
